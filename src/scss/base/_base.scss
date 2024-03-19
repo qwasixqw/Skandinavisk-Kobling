@@ -32,3 +32,37 @@ body {
 
 .footer {
 }
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -12px;
+		left: 0;
+		width: 100%;
+		border: 1px solid rgb(217, 217, 217);
+	}
+}
+.title {
+	font-size: clamp(1.5rem, 1.281rem + 1.1vw, 2rem);
+	font-weight: 500;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+.next {
+	display: flex;
+	gap: 7px;
+	cursor: pointer;
+	p {
+		color: $color-violet;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 150%;
+		text-transform: uppercase;
+	}
+}

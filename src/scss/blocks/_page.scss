@@ -40,7 +40,15 @@
 
 	&__slider {
 		margin-top: clamp(1rem, 0.712rem + 1.23vw, 1.5rem);
-		max-width: 1200px;
-		max-height: 556px;
+	}
+
+	&__item {
+		img {
+			position: relative;
+			object-fit: cover;
+			object-position: center;
+			width: 1200px;
+			height: clamp(33.375rem, 32.772rem + 3.01vw, 34.75rem);
+		}
 	}
 }

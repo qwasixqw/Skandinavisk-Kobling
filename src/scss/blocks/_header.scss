@@ -38,6 +38,8 @@
 	}
 
 	&__catalog {
+		position: relative;
+		z-index: 100;
 		cursor: pointer;
 		display: flex;
 		align-items: center;
@@ -123,12 +125,13 @@
 
 	@media screen and (max-width: $media-laptop) {
 		position: absolute;
+		z-index: 100;
 		margin: 0px;
 		padding-top: clamp(3.125rem, 2.224rem + 3.85vw, 4.688rem);
 		padding-bottom: 50px;
 		padding-left: 50px;
 		top: 0;
-		left: -100%;
+		left: -1000%;
 		display: flex;
 		flex-direction: column;
 		width: 100vw;
