@@ -12,9 +12,12 @@
 
 	&__body {
 		margin-top: clamp(2.625rem, 2.351rem + 1.37vw, 3.25rem);
+		position: relative;
 	}
 
 	&__video {
 		max-width: 100%;
+		position: relative;
+		background-color: $color-black;
 	}
 }

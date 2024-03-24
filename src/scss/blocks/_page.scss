@@ -52,3 +52,17 @@
 		}
 	}
 }
+
+.swiper-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.swiper-pagination-bullet {
+	background: rgb(255, 255, 255) !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: rgb(255, 255, 255);
+}
