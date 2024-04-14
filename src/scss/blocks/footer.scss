@@ -1,0 +1,100 @@
+.footer {
+	background-color: $color-violet;
+	color: $color-white;
+	margin-top: clamp(3.875rem, 3.382rem + 2.47vw, 5rem);
+	padding: 32px 0;
+
+	&__wrapper {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	&__body {
+		margin-top: 8px;
+	}
+
+	&__modify {
+		margin-top: 24px;
+	}
+
+	&__item {
+		flex: 1 1 270px;
+	}
+
+	&__logo {
+	}
+
+	&__social {
+		margin-top: 24px;
+		display: flex;
+		align-items: center;
+		gap: 11px;
+	}
+
+	&__icon {
+	}
+
+	&__license {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 15px;
+		margin-top: 24px;
+	}
+
+	&__title {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 17px;
+		text-transform: uppercase;
+
+		&:not(:first-child) {
+			margin-top: 16px;
+		}
+	}
+
+	&__about {
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+
+		a {
+			color: $color-white;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 17px;
+		}
+	}
+
+	&__marg {
+		margin-top: 8px;
+	}
+
+	&__license {
+		margin-top: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		p {
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 15px;
+			text-decoration-line: underline;
+		}
+	}
+
+	&__up {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background: rgb(156, 122, 197);
+	}
+}

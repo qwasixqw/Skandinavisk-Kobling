@@ -1,0 +1,100 @@
+.where-buy {
+	margin-top: clamp(4rem, 3.562rem + 2.19vw, 5rem);
+	&__wrapper {
+	}
+
+	&__bg {
+		margin-top: clamp(2.25rem, 1.812rem + 2.19vw, 3.25rem);
+
+		@media screen and (max-width: $media-laptop) {
+			display: none;
+		}
+	}
+}
+.adaptive-buy {
+	margin-top: clamp(2.25rem, 1.812rem + 2.19vw, 3.25rem);
+	display: none;
+	@media screen and (max-width: $media-laptop) {
+		display: block;
+	}
+
+	&__wrap {
+	}
+
+	&__item {
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+
+		&.open {
+			.adaptive-buy__bottom {
+				max-height: 500px; /* Максимальная высота, к которой будет растягиваться блок */
+			}
+		}
+	}
+
+	&__top {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 150%;
+	}
+
+	&__img {
+	}
+
+	&__bottom {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+	}
+
+	&__company {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+
+	&__address {
+		margin-top: 4px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 150%;
+		max-width: 400px;
+	}
+
+	&__phone {
+		display: block;
+		margin-top: 4px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 150%;
+		color: $color-black;
+	}
+
+	&__email {
+		margin-top: 4px;
+		color: rgb(9, 109, 217);
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 150%;
+	}
+}
+
+.rotate-up {
+	transform: rotate(180deg);
+	transition: transform 0.3s ease;
+}
+
+.rotate-down {
+	transform: rotate(0deg);
+	transition: transform 0.3s ease;
+}

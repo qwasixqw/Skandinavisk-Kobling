@@ -1,0 +1,23 @@
+.manufacture {
+	margin-top: clamp(4rem, 3.562rem + 2.19vw, 5rem);
+
+	&__wrapper {
+	}
+
+	&__row {
+	}
+
+	&__title {
+	}
+
+	&__body {
+		margin-top: clamp(2.625rem, 2.351rem + 1.37vw, 3.25rem);
+		position: relative;
+	}
+
+	&__video {
+		max-width: 100%;
+		position: relative;
+		background-color: $color-black;
+	}
+}

@@ -1,0 +1,68 @@
+.page {
+	&__wrapper {
+	}
+
+	&__title {
+		font-family: $fonts-Unbounded;
+		text-transform: uppercase;
+		font-size: clamp(1.375rem, -0.139rem + 6.46vw, 4rem);
+		font-weight: 700;
+		line-height: 130%;
+	}
+
+	&__descr {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		margin-top: clamp(0.5rem, 0.212rem + 1.23vw, 1rem);
+
+		@media screen and (max-width: $media-tablet) {
+			flex-direction: column;
+			align-items: normal;
+			gap: 8px;
+		}
+	}
+
+	&__slogan {
+		font-size: clamp(1rem, 0.423rem + 2.46vw, 2rem);
+		font-weight: 500;
+		line-height: 130%;
+		text-transform: uppercase;
+	}
+
+	&__quality {
+		color: $color-gray;
+		font-size: clamp(0.75rem, 0.606rem + 0.62vw, 1rem);
+		font-weight: 500;
+		line-height: 150%;
+		text-transform: uppercase;
+	}
+
+	&__slider {
+		margin-top: clamp(1rem, 0.712rem + 1.23vw, 1.5rem);
+	}
+
+	&__item {
+		img {
+			position: relative;
+			object-fit: cover;
+			object-position: center;
+			width: 1200px;
+			height: clamp(33.375rem, 32.772rem + 3.01vw, 34.75rem);
+		}
+	}
+}
+
+.swiper-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.swiper-pagination-bullet {
+	background: rgb(255, 255, 255) !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: rgb(255, 255, 255);
+}
